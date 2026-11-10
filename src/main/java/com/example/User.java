@@ -1,0 +1,78 @@
+package com.example;
+
+import java.io.Serializable;
+
+public class User implements Serializable {
+    private String firstName;
+    private String lastName;
+    private String email;
+    private String dateOfBirth;
+    private String howToHeardAbout;
+    private String contactMethod;
+    private String announcements;
+
+    public User() {
+        firstName = "";
+        lastName = "";
+        email = "";
+        dateOfBirth = "";
+        howToHeardAbout = "";
+        contactMethod = "";
+        announcements = "";
+    }
+
+    public User(String firstName, String lastName, String email, String dateOfBirth, String howToHeardAbout, String contactMethod, String announcements) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.email = email;
+        this.dateOfBirth = dateOfBirth;
+        this.howToHeardAbout = howToHeardAbout;
+        this.contactMethod = contactMethod;
+        this.announcements = announcements;
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getDateOfBirth() {return dateOfBirth;}
+    public void setDateOfBirth(String dateOfBirth) {this.dateOfBirth = dateOfBirth;}
+    public String getHowToHeardAbout() {return howToHeardAbout;}
+    public String getContactMethod() {return contactMethod;}
+
+    public String getAnnouncements() {
+        return announcements;
+    }
+
+    public void setHowToHeardAbout(String howToHeardAbout) {
+        this.howToHeardAbout = howToHeardAbout;
+    }
+
+    public void setAnnouncements(String announcements) {
+        this.announcements = announcements;
+    }
+
+    public void setContactMethod(String contactMethod) {
+        this.contactMethod = contactMethod;
+    }
+}

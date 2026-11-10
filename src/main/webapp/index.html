@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Murach's Java Servlets and JSP</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+
+<main>
+    <img src="images/logo.png" alt="Logo">
+    <h1>Survey</h1>
+    <p>If you have a moment, we'd appreciate it if you would fill out this survey</p>
+
+    <section>
+        <h2>Your information</h2>
+        <form action="emailList" method="post">
+            <input type="hidden" name="action" value="add">
+
+            <div class="field-group">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" required autocomplete="given-name">
+
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" required autocomplete="family-name">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required autocomplete="email">
+
+                <label for="dateOfBirth">Date of Birth:</label>
+                <input type="text" id="dateOfBirth" name="dateOfBirth" required placeholder="MM/DD/YYYY">
+            </div>
+
+            <fieldset class="radio-section">
+                <legend>How did you hear about us?</legend>
+                <label><input type="radio" name="ways" value="search"> Search engine</label>
+                <label><input type="radio" name="ways" value="mouth"> Word of mouth</label>
+                <label><input type="radio" name="ways" value="socialMedia"> Social media</label>
+                <label><input type="radio" name="ways" value="other"> Other</label>
+            </fieldset>
+
+            <fieldset class="checkbox-section">
+                <legend>Would you like to receive announcements about new CDs and special offers?</legend>
+                <label><input type="checkbox" name="anncouncements" value="like"> YES, I'd like that.</label><br>
+                <label><input type="checkbox" name="anncouncements" value="email_announcements"> YES, please send email announcements.</label>
+            </fieldset>
+
+            <div class="select-group">
+                <label for="methods">Please contact me by:</label>
+                <select id="methods" name="methods">
+                    <option value="both">Email or postal mail</option>
+                    <option value="email">Email only</option>
+                    <option value="postal">Postal mail only</option>
+                </select>
+            </div>
+
+            <div class="submit-group">
+                <button type="submit" id="submit">Join Now</button>
+            </div>
+        </form>
+    </section>
+</main>
+
+</body>
+</html>

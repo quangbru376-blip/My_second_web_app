@@ -1,0 +1,94 @@
+/* Thiết lập chung cho trang theo chuẩn HTML5 */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 90%;
+    max-width: 650px;
+    padding: 20px;
+    background-color: #fff;
+}
+
+/* Kiểu chữ cho tiêu đề */
+h1 {
+    font-size: 250%;
+    color: teal;
+    margin-bottom: 0.5em;
+    margin-top: 0;
+}
+
+h2 {
+    font-size: 200%;
+    color: teal;
+    margin-bottom: 0.5em;
+    margin-top: 1em;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
+/* Căn chỉnh khối thông tin (Your information) sử dụng Flexbox hiện đại */
+.field-group {
+    display: grid;
+    grid-template-columns: 9em 15em;
+    gap: 0.5em 1em;
+    align-items: center;
+    margin-bottom: 1.5em;
+}
+
+.field-group label {
+    text-align: left;
+}
+
+.field-group input {
+    width: 100%;
+    padding: 0.2em;
+    box-sizing: border-box;
+}
+
+/* Định dạng Fieldset và Legend thay thế thẻ h1 cũ */
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0 0 1em 0;
+}
+
+legend {
+    font-size: 200%;
+    color: teal;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+    padding: 0;
+}
+
+/* Căn chỉnh các nhóm Radio / Checkbox */
+.radio-section label,
+.checkbox-section label {
+    margin-right: 1.5em;
+}
+
+.checkbox-section label {
+    display: inline-block;
+    margin-bottom: 0.3em;
+}
+
+/* Căn chỉnh phần select dropdown */
+.select-group {
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+.select-group select {
+    margin-left: 0.5em;
+    padding: 0.2em;
+}
+
+/* Nút Submit */
+.submit-group {
+    margin-top: 1em;
+}
+
+#submit {
+    padding: 0.3em 1em;
+    font-size: 100%;
+}
