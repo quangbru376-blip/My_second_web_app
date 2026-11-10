@@ -17,12 +17,12 @@
     <span>${user.lastName}</span><br>
     <label>Date of Birth:</label>
     <span>${user.dateOfBirth}</span><br>
-    <label>Heard about us from</label>
-    <span>${user.howToHeardAbout}</span><br>
+    <label>Heard about us from:</label>
+    <span>${survey.howToHeardAbout}</span><br>
     <label>Contact Methods:</label>
-    <span>${user.contactMethod}</span><br>
+    <span>${survey.contactMethod}</span><br>
     <label>Announcements:</label>
-    <span>${user.announcements}</span><br>
+    <span>${survey.announcements}</span><br>
 
     <p>To enter another email address, click on the Back button in your browser or the Return button show below</p>
     <form action="" method="get">
